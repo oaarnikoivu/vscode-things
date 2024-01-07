@@ -1,0 +1,76 @@
+{
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "vim.leader": "<Space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    {
+      "before": [
+        "<S-h>"
+      ],
+      "commands": [
+        ":bprevious"
+      ],
+    },
+    {
+      "before": [
+        "<S-l>"
+      ],
+      "commands": [
+        ":bnext"
+      ]
+    },
+    // splits 
+    {
+      "before": ["leader", "v"], "commands": [":vsplit"]
+    }, 
+    {
+      "before": ["leader", "s"], "commands": [":split"]
+    },
+    // FILE TREE
+    {
+      "before": ["leader", "n", "e"], "commands": ["workbench.explorer.fileView.focus"]
+    },
+    // NICE TO HAVE
+    {
+      "before": ["leader", "w"], "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "p"], "commands": ["workbench.action.formatDocument"]
+    }
+  ],
+  "workbench.iconTheme": "vscode-icons",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "svelte.enable-ts-plugin": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "workbench.statusBar.visible": false,
+  "breadcrumbs.enabled": false,
+  "notebook.lineNumbers": "on"
+}
